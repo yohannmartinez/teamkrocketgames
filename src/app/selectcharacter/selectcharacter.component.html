@@ -7,73 +7,82 @@
 <div class="selectcontainer">
   <div class="selectleft">
     <div class="row">
-      <div class="card">
+      <div class="card" id="perso1">
+        <img src="{{heroes[366].images.sm}}" class="cardimage">
         <div class="cardtext">
-          <span class="charactersurname">The Brute</span>
+          <span class="charactersurname">{{ heroes[366].biography.publisher }}</span>
           <br>
-          <span class="charactername">Jean-Louis</span>
+          <span class="charactername">{{ heroes[366].name }}</span>
         </div>
       </div>
       <div class="card">
+        <img src="{{heroes[379].images.sm}}" class="cardimage">
         <div class="cardtext">
-          <span class="charactersurname">The Brute</span>
+          <span class="charactersurname">{{ heroes[379].biography.publisher }}</span>
           <br>
-          <span class="charactername">Jean-Louis</span>
+          <span class="charactername">{{ heroes[379].name }}</span>
         </div>
       </div>
       <div class="card">
+        <img src="{{heroes[210].images.sm}}" class="cardimage">
         <div class="cardtext">
-          <span class="charactersurname">The Brute</span>
+          <span class="charactersurname">{{ heroes[210].biography.publisher }}</span>
           <br>
-          <span class="charactername">Jean-Louis</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="card">
-        <div class="cardtext">
-          <span class="charactersurname">The Brute</span>
-          <br>
-          <span class="charactername">Jean-Louis</span>
-        </div>
-      </div>
-      <div class="card">
-        <div class="cardtext">
-          <span class="charactersurname">The Brute</span>
-          <br>
-          <span class="charactername">Jean-Louis</span>
-        </div>
-      </div>
-      <div class="card">
-        <div class="cardtext">
-          <span class="charactersurname">The Brute</span>
-          <br>
-          <span class="charactername">Jean-Louis</span>
+          <span class="charactername">{{ heroes[210].name }}</span>
         </div>
       </div>
     </div>
 
     <div class="row">
       <div class="card">
+        <img src="{{heroes[123].images.sm}}" class="cardimage">
         <div class="cardtext">
-          <span class="charactersurname">The Brute</span>
+          <span class="charactersurname">{{ heroes[123].biography.fullName }}</span>
           <br>
-          <span class="charactername">Jean-Louis</span>
+          <span class="charactername">{{ heroes[123].name }}</span>
         </div>
       </div>
       <div class="card">
+        <img src="{{heroes[254].images.sm}}" class="cardimage">
         <div class="cardtext">
-          <span class="charactersurname">The Brute</span>
+          <span class="charactersurname">{{ heroes[254].biography.publisher }}</span>
           <br>
-          <span class="charactername">Jean-Louis</span>
+          <span class="charactername">{{ heroes[254].name }}</span>
         </div>
       </div>
       <div class="card">
+        <img src="{{heroes[58].images.sm}}" class="cardimage">
         <div class="cardtext">
-          <span class="charactersurname">The Brute</span>
+          <span class="charactersurname">{{ heroes[58].biography.publisher }}</span>
           <br>
-          <span class="charactername">Jean-Louis</span>
+          <span class="charactername">{{ heroes[58].name }}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card">
+        <img src="{{heroes[79].images.sm}}" class="cardimage">
+        <div class="cardtext">
+          <span class="charactersurname">{{ heroes[79].biography.publisher }}</span>
+          <br>
+          <span class="charactername">{{ heroes[79].name }}</span>
+        </div>
+      </div>
+      <div class="card">
+          <img src="{{heroes[494].images.sm}}" class="cardimage">
+        <div class="cardtext">
+          <span class="charactersurname">{{ heroes[494].biography.publisher }}</span>
+          <br>
+          <span class="charactername">{{ heroes[494].name }}</span>
+        </div>
+      </div>
+      <div class="card">
+        <img src="{{heroes[528].images.sm}}" class="cardimage">
+        <div class="cardtext">
+          <span class="charactersurname">{{ heroes[528].biography.publisher }}</span>
+          <br>
+          <span class="charactername">{{ heroes[528].name }}</span>
         </div>
       </div>
     </div>
@@ -83,9 +92,10 @@
 
   <div class="selectright">
     <div class="playerschoices">
-      <div class="player1description charactersurname">
+      <div class="player1description">
         <h2 class="playersnames">JEAN-LOUIS</h2>
-        <p>biography</p>
+        <p>{{heroes[1].biography.fullName}}</p>
+        <p>{{heroes[1].biography.alterEgos}}</p>
         <ul>
           <li>Intelligence : 0
           </li>

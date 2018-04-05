@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CharacterfeatureService } from '../characterfeatures.service';
 
 @Component({
   selector: 'app-selectcharacter',
@@ -7,14 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SelectcharacterComponent implements OnInit {
 
-  constructor() { }
+  heroes; // all the heroes
+  hero; // hero par rapport a son id
+  constructor(private CharacterfeaturesService: CharacterfeatureService) { }
 
   ngOnInit() {
-    /* let windowHeight = window.innerHeight;
-
-    function fullpage(){
-      document.getElementById('selectcontainer').style.height = "400px"; 
-    }; */
+    this.CharacterfeaturesService.getHeroes().subscribe(heroes => {
+      // console.log(heroes);
+      this.heroes = heroes;
+    });
   }
 
 }
