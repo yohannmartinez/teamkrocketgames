@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CharacterfeatureService } from '../characterfeatures.service';
 
 @Component({
   selector: 'app-game',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GameComponent implements OnInit {
 
-  constructor() { }
+  heroes; // all the heroes
+  hero; // hero par rapport a son id
+  constructor(private CharacterfeaturesService: CharacterfeatureService) { }
 
   ngOnInit() {
+    this.CharacterfeaturesService.getHeroes().subscribe(heroes => {
+      // console.log(heroes);
+      this.heroes = heroes;
+    });
   }
 
 }
