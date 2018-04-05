@@ -10,6 +10,11 @@ export class SelectcharacterComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    /* let windowHeight = window.innerHeight;
+
+    function fullpage(){
+      document.getElementById('selectcontainer').style.height = "400px"; 
+    }; */
   }
 
 }

@@ -11,7 +11,7 @@ import { RouterModule, Routes } from '@angular/router';
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'game', component: GameComponent}, 
-  { path: 'selectcharacter', component: SelectcharacterComponent},
+  { path: 'selectcharacter', component: SelectcharacterComponent}
    
 ]
 

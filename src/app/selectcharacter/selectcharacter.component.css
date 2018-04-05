@@ -1,0 +1,134 @@
+.selectcontainer {
+    display: flex;
+    height:calc(100vh - 100px);
+    min-height: 700px;  
+}
+
+.title{
+    width:100%;
+    text-align: center;
+    height:100px;
+    line-height: 100px;
+    color: white;
+    background-color:yellow;
+    font-size: 65px;
+    font-family: 'Anton', sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+h1, h2 {
+    font-family: 'Anton', sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+/* SELECT LEFT */
+
+.selectleft {
+    width: 50%;
+    height: 100%;
+    flex: 1;
+    padding-right: 20px;
+    background-color: red;
+}
+
+.row {
+    height: calc(100% / 3);
+    width: 100%;
+    display: flex;
+}
+
+.card {
+    border-radius: 20px;
+    margin: 20px 0px 20px 20px;
+    background: url(/assets/a.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    position: relative;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, .3);
+}
+
+.cardtext {
+    background-color: white;
+    height: 65px;
+    width: 100%;
+    position:absolute;
+    bottom:0;
+    text-align: center;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.charactersurname {
+    font-size: 15px;
+    color: orange;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+}
+
+.charactername {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+
+/* SELECT RIGHT */
+
+.selectright {
+    width: 50%;
+    height: 100%;
+    flex: 1;
+    background-color:green;
+    position:relative;
+}
+
+.playerschoices{
+    height:50%;
+}
+
+.player1description {
+    float: left;
+    width: 40%;
+    margin-left: 30px;
+}
+
+.player2description {
+    float: right;
+    width: 40%;
+    margin-left: 30px;
+}
+
+.playersnames {
+    color: white;
+    font-size: 50px;
+}
+
+.largecard1 {
+    border-radius: 20px;
+    background: url(/assets/a.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 90%;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, .3);
+    float: right;
+    top: 5%;
+    position: relative;
+}
+
+.largecard2 {
+    border-radius: 20px;
+    background: url(/assets/a.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 90%;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, .3);
+    float: left;
+    top: 5%;
+    margin-left: 30px;
+}
