@@ -105,7 +105,7 @@ export class GameComponent implements OnInit {
         this.selectCharService.player1.life = this.selectCharService.player1.life + 1 ;
       } else {
         this.selectCharService.player2.life = this.selectCharService.player2.life - 1 ;
-      } this.colorBar();
+      } this.colorBar(); this.changeTurn();
 
       if (this.selectCharService.player1.life < 0) {
         this.selectCharService.player1.life = 0;
