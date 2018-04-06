@@ -31,18 +31,27 @@ export class SelectcharacterComponent implements OnInit {
 
   go(){
 
-    if(this.selectCharService.player2 && this.selectCharService.player1){
+    if(this.selectCharService.player2 && this.selectCharService.player1 && this.selectCharService.player2.id !== this.selectCharService.player1.id){
       
       this.router.navigate(['game']);
     }
   }
 
+  resetCharacter(){
+    this.selectCharService.player2 = undefined;
+    this.selectCharService.player1 = undefined;
+  }
+
   selectHero(hero) {
     if (!this.selectCharService.player1) {
       this.selectCharService.player1 = hero;
+      this.selectCharService.player1.life = 100;      
     } else {
       this.selectCharService.player2 = hero;
+      this.selectCharService.player2.life = 100; 
     }
   }
+
+  
 
 }

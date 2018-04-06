@@ -7,8 +7,13 @@
       PLAYER 1 - {{selectCharService.player1.name}}
     </span>
     <img src="{{selectCharService.player1.images.lg}}" class="imageGame">
+    <div class="powers" id="powersj1" *ngIf="turn == 1">
+      <button class="buttonpowers" (click)="attack()">ATTAQUER</button>
+      <button class="buttonpowers" (click)="heal()">HEAL</button>
+      <button class="buttonpowers" id="buttonevent1" (click)="special()">SPECIAL</button>
+    </div>
     <div class="lifebar">
-      <div class="staylife" id="lifeplayer1"></div>
+      <div class="staylife" id="lifeplayer1" [ngStyle]="{'width': selectCharService.player1.life + '%'}">{{selectCharService.player1.life}}</div>
     </div>
   </div>
 
@@ -21,8 +26,13 @@
       PLAYER 2 - {{selectCharService.player2.name}}
     </span>
     <img src="{{selectCharService.player2.images.lg}}" class="imageGame">
+    <div class="powers" id="powersj2" *ngIf="turn == 2">
+      <button class="buttonpowers" (click)="attack()">ATTAQUER</button>
+      <button class="buttonpowers" (click)="heal()">HEAL</button>
+      <button class="buttonpowers" id="buttonevent2" (click)="special()">SPECIAL</button>
+    </div>
     <div class="lifebar">
-      <div class="staylife" id="lifeplayer2"></div>
+      <div class="staylife" id="lifeplayer2" [ngStyle]="{'width': selectCharService.player2.life + '%'}">{{selectCharService.player2.life}}</div>
     </div>
   </div>
 

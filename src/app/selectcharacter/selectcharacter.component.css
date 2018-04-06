@@ -94,7 +94,7 @@ h1, h2 {
 
 .playernameinfo{
     display:block;
-    font-size:40px;
+    font-size:30px;
     font-family:'Anton',sans-serif;
     font-style: italic;
     letter-spacing: 1px;
@@ -151,6 +151,7 @@ h1, h2 {
     border: none;
     padding: 15px;
     border-radius: 25px;
+    cursor:pointer;
 }
 
 #play {

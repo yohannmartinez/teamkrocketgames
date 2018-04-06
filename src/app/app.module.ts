@@ -11,12 +11,14 @@ import { TestComponent } from './test/test.component';
 import { CharacterfeatureService } from './characterfeatures.service';
 import { HttpClientModule } from '@angular/common/http';
 import { SelectCharService } from './select-char.service';
+import { CombatmortelComponent } from './combatmortel/combatmortel.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'game', component: GameComponent },
   { path: 'selectcharacter', component: SelectcharacterComponent },
   { path: 'test', component: TestComponent },
+  { path: 'combatmortel', component: CombatmortelComponent },
 ]
 
 
@@ -26,7 +28,8 @@ const appRoutes: Routes = [
     GameComponent,
     SelectcharacterComponent,
     HomeComponent,
-    TestComponent
+    TestComponent,
+    CombatmortelComponent
   ],
   imports: [
     BrowserModule,
