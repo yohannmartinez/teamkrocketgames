@@ -11,7 +11,6 @@
     height:150px;
     line-height: 150px;
     color: white;
-    background-color:rgba(255, 123, 0,0);
     font-size: 65px;
     font-family: 'Anton', sans-serif;
     font-style: italic;
@@ -27,7 +26,6 @@ h1, h2 {
 /* SELECT LEFT */
 
 .selectleft {
-    width: 50%;
     height: 100%;
     flex: 1;
     padding-right: 40px;
@@ -83,60 +81,42 @@ h1, h2 {
     font-family: 'Lato', sans-serif;
 }
 
+
+/* FIN SELECT LEFT */
+
 /* SELECT RIGHT */
 
 .selectright {
-    width: 50%;
     height: 100%;
     flex: 1;
-    position:relative;
+    border:1px solid rgb(8, 8, 53);
 }
 
-.playerschoices{
-    height:50%;
+.playernameinfo{
+    display:block;
+    font-size:15px;
+    font-family:'Anton',sans-serif;
+    font-style: italic;
+    letter-spacing: 1px;
+    color:white;
 }
 
-.player1description {
-    float: left;
-    width: 40%;
-    margin-left: 30px;
+.player1character{
+    height:40%;
+    margin-top:20px;
+    margin-right:20px;
+    border-bottom:2px solid white;
 }
 
-.player2description {
-    float: right;
-    width: 40%;
-    margin-left: 30px;
+.player2character{
+    margin-top:20px;
+    margin-right:20px;
+    height:40%;
+    border-bottom:2px solid white;
 }
 
-.playersnames {
-    color: white;
-    font-size: 50px;
+.playerimageinfo{
+    float:left;
 }
 
-.largecard1 {
-    border-radius: 20px;
-    background: url(/assets/a.jpg);
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 50%;
-    height: 90%;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, .3);
-    float: right;
-    top: 5%;
-    position: relative;
-}
-
-.largecard2 {
-    border-radius: 20px;
-    background: url(/assets/a.jpg);
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 50%;
-    height: 90%;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, .3);
-    float: left;
-    top: 5%;
-    margin-left: 30px;
-}
+/*FIN SELECT RIGHT */

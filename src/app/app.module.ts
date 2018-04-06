@@ -10,12 +10,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { TestComponent } from './test/test.component';
 import { CharacterfeatureService } from './characterfeatures.service';
 import { HttpClientModule } from '@angular/common/http';
+import { SelectCharService } from './select-char.service';
 
 const appRoutes: Routes = [
-  { path: '', component: HomeComponent},
-  { path: 'game', component: GameComponent}, 
-  { path: 'selectcharacter', component: SelectcharacterComponent},
-  { path: 'test', component: TestComponent},
+  { path: '', component: HomeComponent },
+  { path: 'game', component: GameComponent },
+  { path: 'selectcharacter', component: SelectcharacterComponent },
+  { path: 'test', component: TestComponent },
 ]
 
 
@@ -32,7 +33,10 @@ const appRoutes: Routes = [
     HttpClientModule,
     RouterModule.forRoot(appRoutes),
   ],
-  providers: [CharacterfeatureService],
+  providers: [
+    CharacterfeatureService,
+    SelectCharService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -52,7 +52,7 @@
 .contjoueur1{
     flex:1;
     background-color:green;
-    border-right:2px solid white;
+    border-right:3px solid white;
     position: relative;
 }
 
@@ -68,7 +68,7 @@
 .contjoueur2{
     flex:1;
     background-color:blue;
-    border-right:2px solid white;  
+    border-right:3px solid white;  
     position: relative;
 }
 
