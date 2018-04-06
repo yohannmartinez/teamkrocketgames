@@ -11,8 +11,6 @@
       <div class="card" id="char1" *ngFor="let id of row" (click)="selectHero(heroes[id])">
         <img src="{{heroes[id].images.sm}}" class="cardimage">
         <div class="cardtext">
-          <span class="charactersurname">{{ getCreator(heroes[id]) }}</span>
-          <br>
           <span class="charactername">{{ heroes[id].name }}</span>
         </div>
       </div>

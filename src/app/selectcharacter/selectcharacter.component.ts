@@ -32,9 +32,8 @@ export class SelectcharacterComponent implements OnInit {
   go(){
 
     if(this.selectCharService.player2 && this.selectCharService.player1){
+      
       this.router.navigate(['game']);
-    } else {
-      undefined;
     }
   }
 
@@ -43,14 +42,6 @@ export class SelectcharacterComponent implements OnInit {
       this.selectCharService.player1 = hero;
     } else {
       this.selectCharService.player2 = hero;
-    }
-  }
-
-  getCreator(hero) {
-    if (hero.biography.publisher && hero.biography.publisher != "") {
-      return hero.biography.publisher;
-    } else {
-      return hero.biography.fullName;
     }
   }
 
