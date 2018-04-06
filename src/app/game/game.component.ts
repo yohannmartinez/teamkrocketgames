@@ -132,7 +132,7 @@ export class GameComponent implements OnInit {
     this.changeTurn();
   }
 
-  constructor(private CharacterfeaturesService: CharacterfeatureService, private selectCharService: SelectCharService, private router: Router) { }
+  constructor(private CharacterfeaturesService: CharacterfeatureService, public selectCharService: SelectCharService, private router: Router) { }
 
   ngOnInit() {
     this.CharacterfeaturesService.getHeroes().subscribe(heroes => {
