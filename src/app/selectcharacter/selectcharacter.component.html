@@ -21,14 +21,30 @@
 
   <div class="selectright">
     <div class="player1character">
-      <img src="{{selectCharService.player1.images.sm}}" class="playerimageinfo" *ngIf="selectCharService.player1">
-      <span class="playernameinfo" *ngIf="selectCharService.player1">Player1 - {{selectCharService.player1.name}}</span>
-
+      <img src="{{selectCharService.player1.images.lg}}" class="playerimageinfo" *ngIf="selectCharService.player1">
+      <div class="containerplayerinfo" *ngIf="selectCharService.player1">
+        <span class="playernameinfo">Player 1 - {{selectCharService.player1.name}}</span>
+        <span class="playernameinfostats">- Intelligence : {{selectCharService.player1.powerstats.intelligence}}</span>
+        <span class="playernameinfostats">- Strength : {{selectCharService.player1.powerstats.strength}}</span>
+        <span class="playernameinfostats">- Speed : {{selectCharService.player1.powerstats.speed}}</span>
+        <span class="playernameinfostats">- Durability : {{selectCharService.player1.powerstats.durability}}</span>
+        <span class="playernameinfostats">- Power : {{selectCharService.player1.powerstats.power}}</span>
+        <span class="playernameinfostats">- Combat : {{selectCharService.player1.powerstats.combat}}</span>
+      </div>
     </div>
     <div class="player2character">
-      <span class="playernameinfo" *ngIf="selectCharService.player2">Player2 - {{selectCharService.player2.name}}</span>
-      <img src="{{selectCharService.player2.images.sm}}" class="playerimageinfo" *ngIf="selectCharService.player2">
+      <img src="{{selectCharService.player2.images.lg}}" class="playerimageinfo" *ngIf="selectCharService.player2">
+      <div class="containerplayerinfo" *ngIf="selectCharService.player2">
+        <span class="playernameinfo">Player 2 - {{selectCharService.player2.name}}</span>
+        <span class="playernameinfostats">- Intelligence : {{selectCharService.player2.powerstats.intelligence}}</span>
+        <span class="playernameinfostats">- Strength : {{selectCharService.player2.powerstats.strength}}</span>
+        <span class="playernameinfostats">- Speed : {{selectCharService.player2.powerstats.speed}}</span>
+        <span class="playernameinfostats">- Durability : {{selectCharService.player2.powerstats.durability}}</span>
+        <span class="playernameinfostats">- Power : {{selectCharService.player2.powerstats.power}}</span>
+        <span class="playernameinfostats">- Combat : {{selectCharService.player2.powerstats.combat}}</span>
+      </div>
     </div>
-
+    <button class="buttonbottomselect">RESET CHARACTERS</button>
+    <button class="buttonbottomselect" id="play" (click)="go()">PLAY</button>
   </div>
 </div>

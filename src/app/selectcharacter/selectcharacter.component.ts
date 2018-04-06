@@ -1,6 +1,7 @@
 import { SelectCharService } from './../select-char.service';
 import { Component, OnInit } from '@angular/core';
 import { CharacterfeatureService } from '../characterfeatures.service';
+import { RouterModule, Routes, Router } from '@angular/router';
 
 @Component({
   selector: 'app-selectcharacter',
@@ -17,13 +18,24 @@ export class SelectcharacterComponent implements OnInit {
     [79, 494, 528]
   ];
 
-  constructor(private CharacterfeaturesService: CharacterfeatureService, private selectCharService: SelectCharService) { }
+
+
+  constructor(private CharacterfeaturesService: CharacterfeatureService, private selectCharService: SelectCharService, private router: Router) { }
 
   ngOnInit() {
     this.CharacterfeaturesService.getHeroes().subscribe(heroes => {
       // console.log(heroes);
       this.heroes = heroes;
     });
+  }
+
+  go(){
+
+    if(this.selectCharService.player2 && this.selectCharService.player1){
+      this.router.navigate(['game']);
+    } else {
+      undefined;
+    }
   }
 
   selectHero(hero) {
