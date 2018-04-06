@@ -44,6 +44,17 @@
     border-radius:5px;
 }
 
+.imageGame{
+    border:3px solid white;
+    height:30px;
+    border-radius:5px;
+    width:400px;
+    position: relative;
+    left:50%;
+    transform:translate(-50%);
+    margin-top:50px;
+}
+
 /* fin div en commun a player 1 et player 2 */
 
 
